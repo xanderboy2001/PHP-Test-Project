@@ -20,6 +20,10 @@ if (isset($_POST['run_script'])) {
         $output = "Invalid script selected.";
     }
 }
+
+if (isset($_POST['reset'])) {
+    $output = '';
+}
 ?>
 
 <!DOCTYPE html>
@@ -39,6 +43,7 @@ if (isset($_POST['run_script'])) {
                 <?= htmlspecialchars($name) ?>
             </button><br><br>
         <?php endforeach; ?>
+        <button type="submit" name="Reset" value="1">Reset Output</button>
     </form>
 
     <?php if ($output): ?>
