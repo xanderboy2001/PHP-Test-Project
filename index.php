@@ -43,7 +43,7 @@ if (isset($_POST['reset'])) {
                 <?= htmlspecialchars($name) ?>
             </button><br><br>
         <?php endforeach; ?>
-        <button type="submit" name="Reset" value="1">Reset Output</button>
+        <button type="submit" name="reset" value="1">Reset Output</button>
     </form>
 
     <?php if ($output): ?>
